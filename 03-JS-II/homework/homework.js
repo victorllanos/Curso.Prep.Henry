@@ -63,10 +63,14 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch(color){
-    case blue:return "This is blue";
-    case red: return "This is red";
-    case green: return "This is green";
-    case green: return "This is green";
+    case "blue":return "This is blue";
+    break;
+    case "red": return "This is red";
+    break;
+    case "green": return "This is green";
+    break;
+    case "orange": return "This is orange";
+    break;
     default: return"Color not found";
   }
 }
@@ -117,11 +121,11 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
 
-  if(numero/3 === 0){
+  if(numero%3 === 0){
     return "fizz";
-  } else if (numero/5){
+  } else if (numero%5===0){
     return "buzz";
-  }else if(numero/3===0 && numero/5){return "fizzbuzz";
+  }else if(numero%3===0 && numero%5===0){return "fizzbuzz";
 }else {return numero;}
 
 }
@@ -175,14 +179,18 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   for(i=0; i<=10; i++){
-    
+    var resultado=i*6;
+    return resultado;
   }
-  
+ 
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  if(numero.length===3){
+    return "Tiene tres digitos";
+  }else {return false;}
   
 }
 
@@ -190,6 +198,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  i=0;
+  
+  do{
+    var y= numero+5;
+
+  }while(i<8);
+  return y;
 }
 
 
