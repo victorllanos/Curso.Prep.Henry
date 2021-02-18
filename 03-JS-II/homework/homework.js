@@ -123,9 +123,15 @@ function fizzBuzz(numero) {
 
   if(numero%3 === 0){
     return "fizz";
+<<<<<<< HEAD
   } else if (numero%5){
     return "buzz";
   }else if(numero%3===0 && numero%5){return "fizzbuzz";
+=======
+  } else if (numero%5===0){
+    return "buzz";
+  }else if(numero%3===0 && numero%5===0){return "fizzbuzz";
+>>>>>>> c01ce141ba47b970d2674b88b8751f00647fc7b6
 }else {return numero;}
 
 }
@@ -179,19 +185,30 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   for(i=0; i<=10; i++){
+<<<<<<< HEAD
     return  (i*6);
+=======
+    var resultado=i*6;
+    return resultado;
+>>>>>>> c01ce141ba47b970d2674b88b8751f00647fc7b6
   }
-  
+ 
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+<<<<<<< HEAD
   if (numero.length ===3){
     return true;
   }else{
     return false;
   }
+=======
+  if(numero.length===3){
+    return "Tiene tres digitos";
+  }else {return false;}
+>>>>>>> c01ce141ba47b970d2674b88b8751f00647fc7b6
   
 }
 
@@ -199,12 +216,21 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+<<<<<<< HEAD
   var i=0;
   var y=0;
   var x;
   do{
    y = numero+5;
   }while(i<=8);
+=======
+  i=0;
+  
+  do{
+    var y= numero+5;
+
+  }while(i<8);
+>>>>>>> c01ce141ba47b970d2674b88b8751f00647fc7b6
   return y;
 }
 
